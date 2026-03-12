@@ -11,7 +11,7 @@
     --background-color: #fff;
     --content-color: #000;
     --heart-color: red;
-    --content-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem); 
+    --content-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
     --border: 2px solid var(--content-color);
     --card-content-indent: 25px;
 }

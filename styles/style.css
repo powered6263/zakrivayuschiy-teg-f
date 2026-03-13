@@ -162,6 +162,7 @@
   min-height: 38px;
   transition: box-shadow 0.3s ease;
   position: relative;
+  overflow: hidden;
 }
 
 .button:focus {
@@ -175,10 +176,9 @@
 .button:not(.card__icon-button)::before {
   content: "";
   display: block;
-  width: 100%;
-  height: 100%;
   position: absolute;
-  inset: 0;
+  width: 100%;
+  height: 110%; /*высота больше контейнера — на некоторых разрешениях во время анимации почему то образовывался зазор*/
   background-color: var(--content-color);
   transform: scaleX(0);
   transform-origin: left;
@@ -214,11 +214,6 @@
   gap: 8px;
   mix-blend-mode: difference;
   color: var(--background-color);
-}
-
-.like-icon {
-  max-width: 27px;
-  max-height: 24px;
 }
 
 .memory__button {
@@ -262,6 +257,7 @@
 
 .message__button {
   width: 100%;
+  text-transform: uppercase;
 }
 
 .page:has(.message[open]) {
